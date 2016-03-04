@@ -3,7 +3,7 @@ import webbrowser
 
 @route('/:filename#.*#')
 def send_static(filename):
-    return static_file(filename, root='./resources/public/')
+    return static_file(filename, root='../detector/src/main/resources/visualization_files')
 
 @error(403)
 def mistake403(code):
