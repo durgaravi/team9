@@ -5,7 +5,7 @@ To run the entire setup on your local machine:
 ### Files present
 
 1. src/: Python source files
-2. resources/public/: User interface HTML, CSS and JavaScript files
+2. ../detector/src/main/resources/visualization_files: User interface HTML, CSS and JavaScript files
 
 ### Prerequisites:
 
@@ -17,3 +17,4 @@ To run the entire setup on your local machine:
 2. To install required python packages, run : `$ setup.py install`
 3. To start the python server, run `$ python src/mainserver.py`
 4. The visualization pages will open on the browser
+
