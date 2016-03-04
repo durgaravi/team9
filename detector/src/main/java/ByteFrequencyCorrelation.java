@@ -12,7 +12,7 @@ import org.json.simple.JSONObject;
 
 public class ByteFrequencyCorrelation
 {
-	public static String mimetypes[] = {"application/rdf+xml"};//,"application/octet-stream","image/jpeg","image/png"};
+    public static String[] mimetypes = {"text/plain", "application/pdf", "application/rdf+xml", "application/rss+xml", "text/html", "image/png", "image/jpeg", "audio/mpeg", "video/mp4", "video/quicktime", "application/x-sh", "application/gzip", "application/msword", "application/octet-stream"};
 
 	public static void main(String args[]) throws IOException
 	{
@@ -30,12 +30,13 @@ public class ByteFrequencyCorrelation
 				double[] correlationCounts = a.get(1);
 				int numFiles = (int) a.get(2)[0];
 
-				File testFolder = new File(sourceDir + "/" + type + "/data");
-				System.out.println(sourceDir + "/" + type + "/data");
+				File testFolder = new File(sourceDir + "/" + type + "/test_data");
 				File[] testFiles = testFolder.listFiles();
 				for (File file : testFiles) {
-					double inputCounts[] = getInputCounts(file);
-					correlationCounts = getCorrelationFactors(inputCounts, fingerprintCounts, correlationCounts, numFiles++);
+                    if(file.length() != 0) {
+                        double inputCounts[] = getInputCounts(file);
+                        correlationCounts = getCorrelationFactors(inputCounts, fingerprintCounts, correlationCounts, numFiles++);
+                    }
 				}
 				double[][] correlationMatrix = getCorrelationMatrix(fingerprintCounts, correlationCounts, numFiles);
 				writeFingerprint(tarDir + "/src/main/resources/" + "fingerprint_files" + "/" + filetypename + ".txt", fingerprintCounts, correlationCounts, numFiles);
@@ -116,7 +117,7 @@ public class ByteFrequencyCorrelation
         for(int i = 0; i < byteCount.length; i++){
             normalizedCount[i] = (byteCount[i]/(double)max);
         }
-        
+
         if (max > (0.7 * count)) {
             for (int i = 0; i < 256; ++i) {
                normalizedCount[i] = Math.pow(normalizedCount[i], 0.5);

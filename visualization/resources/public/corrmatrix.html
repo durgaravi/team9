@@ -70,8 +70,21 @@
 			<div class="row" id="options">
 				<div class="col-lg-3">
 					<select id="chart_no" onchange="view()" class="form-control">
-						<option value="json/text-html_correlationMatrix.json">text/html</option>
-						<option value="json/application-gzip_correlationMatrix.json">application/gzip</option>
+						<option value="text-html_correlationMatrix.json">text/html</option>
+						<option value="text-plain_correlationMatrix.json">text/plain</option>
+						<option value="application-gzip_correlationMatrix.json">application/gzip</option>
+						<option value="application-octet-stream_correlationMatrix.json">application/octet-stream</option>
+						<option value="application-pdf_correlationMatrix.json">application/pdf</option>
+						<option value="application-rdf+xml_correlationMatrix.json">application/rdf+xml</option>
+						<option value="application-rss+xml_correlationMatrix.json">application/rss+xml</option>
+						<option value="application-xhtml+xml_correlationMatrix.json">application/xhtml+xml</option>
+						<option value="application-msword_correlationMatrix.json">application/msword.</option>
+						<option value="application-xml_correlationMatrix.json">application/xml</option>
+						<option value="audio-mpeg_correlationMatrix.json">audio/mpeg</option>
+						<option value="video-mp4_correlationMatrix.json">video/mp4</option>
+						<option value="video-quicktime_correlationMatrix.json">video/quicktime</option>
+						<option value="image-jpeg_correlationMatrix.json">image/jpeg</option>
+						<option value="image-png_correlationMatrix.json">image/png</option>
 					</select>
 				</div>
 			</div>
@@ -90,7 +103,7 @@
     <script src="js/d3.v3.js"></script>
     <script src="js/jquery.js"></script>
     <script type="text/javascript">
-	viewChart("json/text-html_correlationMatrix.json");
+	viewChart("text-html_correlationMatrix.json");
 	function view()
 	{
 		document.getElementById("chart_panel").innerHTML = "";

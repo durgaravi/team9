@@ -76,8 +76,9 @@
 			<div class="row" id="options">
 				<div class="col-lg-3">
 					<select id="chart_no" class="form-control">
-						<option value="json/total.json">Before Update</option>
-						<option value="json/total.json">After Update</option>
+						<option value="total.json">Initial</option>
+						<option value="total1.json">15 before Update</option>
+						<option value="total2.json">15 after Update</option>
 					</select>
 				</div>
 				<div class="col-lg-3">
@@ -150,7 +151,7 @@
 
 	svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-	d3.json("json/total.json",function(error,data){
+	d3.json("total.json",function(error,data){
 	var names = new Array();
 	for(i=0;i<data.length;++i){names.push(data[i].mime_type);}	
 
@@ -301,7 +302,7 @@
 	    .attr("transform", 
 		  "translate(" + margin.left + "," + margin.top + ")");
 
-	d3.json("json/total.json", function(error, data) {
+	d3.json("total.json", function(error, data) {
 	/**
 	    data.forEach(function(d) {
 		d.date = parseDate(d.date);

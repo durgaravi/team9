@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21c8f5b9-9023-4ffe-9adb-477b04f648c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+    <list default="true" id="5fc46132-bef7-4803-80e0-d23cb4976221" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../classifier/.idea/libraries/Maven__org_apache_tika_tika_1_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../classifier/classifier.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../classifier/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../classifier/src/main/java/FileClassifier.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../ByteFrequencyAnalysis.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../ByteFrequencyCorrelation.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../FHTAnalysis.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../SampleFingerprintFile.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../Sample_header_finger_print_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/Header_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/Trailer_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Header_application-octet-stream16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Header_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Header_application-octet-stream8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Trailer_application-octet-stream16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Trailer_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/Trailer_application-octet-stream8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Header_application-octet-stream16.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Header_application-octet-stream4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Header_application-octet-stream8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Trailer_application-octet-stream16.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Trailer_application-octet-stream4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/Trailer_application-octet-stream8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Header_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Trailer_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Header_application-octet-stream16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Header_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Header_application-octet-stream8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Trailer_application-octet-stream16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Trailer_application-octet-stream4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/Trailer_application-octet-stream8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fingerprint_files/application-octet-stream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Header_application-octet-stream16.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Header_application-octet-stream4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Header_application-octet-stream8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Trailer_application-octet-stream16.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Trailer_application-octet-stream4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/Trailer_application-octet-stream8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/visualization_files/application-octet-stream.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../text-plain.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ByteFrequencyAnalysis.class" afterPath="$PROJECT_DIR$/target/classes/ByteFrequencyAnalysis.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ByteFrequencyCorrelation.class" afterPath="$PROJECT_DIR$/target/classes/ByteFrequencyCorrelation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/FHTAnalysis.class" afterPath="$PROJECT_DIR$/target/classes/FHTAnalysis.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detector.iml" afterPath="$PROJECT_DIR$/detector.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-detector.iml" afterPath="$PROJECT_DIR$/file-detector.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ByteFrequencyAnalysis.java" afterPath="$PROJECT_DIR$/src/main/java/ByteFrequencyAnalysis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java" afterPath="$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FHTAnalysis.java" afterPath="$PROJECT_DIR$/src/main/java/FHTAnalysis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fingerprint_files/application-octet-stream.txt" afterPath="$PROJECT_DIR$/src/main/resources/fingerprint_files/application-octet-stream.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream.json" afterPath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream_correlation.json" afterPath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream_correlation.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream_correlationMatrix.json" afterPath="$PROJECT_DIR$/src/main/resources/visualization_files/application-octet-stream_correlationMatrix.json" />
     </list>
     <ignored path="file-detector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,41 +80,27 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ByteFrequencyAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="100" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="100" />
+              <caret line="6" column="295" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="295" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ByteFrequencyCorrelation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ByteFrequencyCorrelation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3043478">
-              <caret line="26" column="125" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="295" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="295" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FHTAnalysis.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FHTAnalysis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FHTAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="76" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6086956">
+              <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -87,10 +119,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/ByteFrequencyAnalysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/FHTAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java" />
       </list>
     </option>
   </component>
@@ -131,19 +162,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="file-detector" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -215,14 +242,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
-  <component name="RunManager" selected="Application.ByteFrequencyCorrelation">
+  <component name="RunManager" selected="Application.FHTAnalysis">
     <configuration default="false" name="ByteFrequencyAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ByteFrequencyAnalysis" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump\" />
+      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -237,7 +264,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ByteFrequencyCorrelation" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump\" />
+      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -252,7 +279,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FHTAnalysis" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump\" />
+      <option name="PROGRAM_PARAMETERS" value="D:\PolarDump" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -571,8 +598,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.ByteFrequencyCorrelation" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FHTAnalysis" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FHTAnalysis" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ByteFrequencyCorrelation" />
         <item index="2" class="java.lang.String" itemvalue="Application.ByteFrequencyAnalysis" />
       </list>
     </recent_temporary>
@@ -588,10 +615,10 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="21c8f5b9-9023-4ffe-9adb-477b04f648c9" name="Default" comment="" />
-      <created>1456950322163</created>
+      <changelist id="5fc46132-bef7-4803-80e0-d23cb4976221" name="Default" comment="" />
+      <created>1457092767870</created>
       <option name="number" value="Default" />
-      <updated>1456950322163</updated>
+      <updated>1457092767870</updated>
     </task>
     <servers />
   </component>
@@ -606,11 +633,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -620,6 +646,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -643,10 +670,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="295" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="295" />
           <folding />
         </state>
       </provider>
@@ -654,28 +681,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ByteFrequencyAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="100" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="100" />
+          <caret line="6" column="295" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="295" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FHTAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="76" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ByteFrequencyCorrelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478">
-          <caret line="26" column="125" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.6086956">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

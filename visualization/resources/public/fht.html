@@ -70,8 +70,21 @@
 			<div class="row" id="options">
 				<div class="col-lg-3">
 					<select id="chart_no" onchange="view()" class="form-control">
-						<option value="application-x-elc.json">text/html</option>
-						<option value="application-x-elc.json">application/gzip</option>
+						<option value="text-html">text/html</option>
+						<option value="text-plain">text/plain</option>
+						<option value="application-gzip">application/gzip</option>
+						<option value="application-octet-stream">application/octet-stream</option>
+						<option value="application-pdf">application/pdf</option>
+						<option value="application-rdf+xml.json">application/rdf+xml</option>
+						<option value="application-rss+xml">application/rss+xml</option>
+						<option value="application-xhtml+xml">application/xhtml+xml</option>
+						<option value="application-msword">application/msword.</option>
+						<option value="application-xml">application/xml</option>
+						<option value="audio-mpeg">audio/mpeg</option>
+						<option value="video-mp4">video/mp4</option>
+						<option value="video-quicktime">video/quicktime</option>
+						<option value="image-jpeg">image/jpeg</option>
+						<option value="image-png">image/png</option>
 					</select>
 				</div>
 				<div class="col-lg-3">
@@ -103,16 +116,16 @@
     <script src="js/d3.v3.js"></script>
     <script src="js/jquery.js"></script>
     <script type="text/javascript">
-	viewChart("json/4_Header_application-x-elc.json","#chart_panelh",4);
-	viewChart("json/4_Trailer_application-x-elc.json","#chart_panelt",4);
+	viewChart("4_Header_application-x-elc.json","#chart_panelh",4);
+	viewChart("4_Trailer_application-x-elc.json","#chart_panelt",4);
 	function view()
 	{
 		document.getElementById("chart_panelh").innerHTML = "";
 		document.getElementById("chart_panelt").innerHTML = "";
 		filename = document.getElementById("chart_no").value;
 		n = document.getElementById("htn").value;
-		filenameh = "json/"+n+"_Header_"+filename;
-		filenamet = "json/"+n+"_Trailer_"+filename;
+		filenameh = n+"_Header_"+filename;
+		filenamet = n+"_Trailer_"+filename;
 		viewChart(filenameh,"#chart_panelh",n);
 		viewChart(filenamet,"#chart_panelt",n);
 	}

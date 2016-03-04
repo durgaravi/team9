@@ -9,13 +9,13 @@ public class FHTAnalysis {
 
     public static String  tarDir = "";
 
-    /*public static final String[] fileTypes = { "text/plain", "text/pdf", "text/rdf+xml", "text/rsf+xml",
-			"text/xhtml+xml", "text/html", "image/png", "image/jpeg", "audio/mpeg", "video/mp4",
-			"video/quicktime", "applicaiton/x-sh", "application/gzip", "application/msword",
-			"application/octet-stream" };
-	*/		
+    /*public static final String[] fileTypes = { "text\\plain", "text\\pdf", "text\\rdf+xml", "text\\rsf+xml",
+			"text\\xhtml+xml", "text\\html", "image\\png", "image\\jpeg", "audio\\mpeg", "video\\mp4",
+			"video\\quicktime", "applicaiton\\x-sh", "application\\gzip", "application\\msword",
+			"application\\octet-stream" };
+	*/
 
-	public static final String[] fileTypes = {"application/octet-stream"};
+    public static String[] fileTypes = {"text/plain", "application/pdf", "application/rdf+xml", "application/rss+xml", "text/html", "image/png", "image/jpeg", "audio/mpeg", "video/mp4", "video/quicktime", "application/x-sh", "application/gzip", "application/msword", "application/octet-stream"};
 
 	public double[][] get_byte_frequency_matrix(int numOfBytes) {
 		double[][] matrix = new double[numOfBytes][maxByteValue];
@@ -104,7 +104,7 @@ public JSONArray getJsonObject(int numOfHeaderTrailerBytes,double[][] byteFreque
                     //create header finger print file
                     File headerFingerPrint = new File(tarDir  + "/src/main/resources/fingerprint_files/"  + headerFingerPrintFile + Integer.toString(numOfHeaderTrailerBytes) + ".txt");
 
-                    //System.out.println(tarDir + "/" + fileTypes[fileTypesIndex] + "/" + headerFingerPrintFile + Integer.toString(numOfHeaderTrailerBytes) + ".txt");
+                    //System.out.println(tarDir + "\\" + fileTypes[fileTypesIndex] + "\\" + headerFingerPrintFile + Integer.toString(numOfHeaderTrailerBytes) + ".txt");
 
                     //create trailer finger print file
                     File trailerFingerPrint = new File(tarDir + "/src/main/resources/fingerprint_files/" + trailerFingerPrintFile + Integer.toString(numOfHeaderTrailerBytes) + ".txt");

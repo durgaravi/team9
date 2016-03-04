@@ -4,7 +4,7 @@ import java.util.Scanner;
 import org.json.simple.JSONObject;
 
 public class ByteFrequencyAnalysis {
-    public static final String[] fileTypes = {"application/rdf+xml"};
+    public static String[] fileTypes = {"text/plain", "application/pdf", "application/rdf+xml", "application/rss+xml", "text/html", "image/png", "image/jpeg", "audio/mpeg", "video/mp4", "video/quicktime", "application/x-sh", "application/gzip", "application/msword", "application/octet-stream"};
 
     public static void main(String[] args) throws Exception{
 
@@ -54,55 +54,57 @@ public class ByteFrequencyAnalysis {
                         byteFreq[j] = Double.parseDouble(values[0]);
                         byteCorrelation[j] = Double.parseDouble(values[1]);
                     }
-                    byte[] byteFile = new byte[(int) file.length()];
-                    fIS.read(byteFile);
-                    fIS.close();
-                    double[] byteCount = new double[256];
+                    if(file.length() != 0) {
+                        byte[] byteFile = new byte[(int) file.length()];
+                        fIS.read(byteFile);
+                        fIS.close();
+                        double[] byteCount = new double[256];
 
-                    //calculating its byte frequency distribution
-                    for (int j = 0; j < byteFile.length; j++) {
-                        byteCount[0xFF & byteFile[j]]++;
-                    }
-
-                    //Finding the max occurring byte
-                    double max = byteCount[0];
-                    int count = 0;
-                    for (int j = 1; j < byteCount.length; j++) {
-                        if (byteCount[j] > max) {
-                            max = byteCount[j];
+                        //calculating its byte frequency distribution
+                        for (int j = 0; j < byteFile.length; j++) {
+                            byteCount[0xFF & byteFile[j]]++;
                         }
-                        count += byteCount[j];
-                    }
 
-                    //Normalizing the byte frequency
-                    for (int j = 0; j < byteCount.length; j++) {
-                        byteCount[j] = byteCount[j] / max;
-                    }
+                        //Finding the max occurring byte
+                        double max = byteCount[0];
+                        int count = 0;
+                        for (int j = 1; j < byteCount.length; j++) {
+                            if (byteCount[j] > max) {
+                                max = byteCount[j];
+                            }
+                            count += byteCount[j];
+                        }
 
-                    //Compounding the byte frequency if needed
-                    if (max > (0.7 * count)) {
+                        //Normalizing the byte frequency
+                        for (int j = 0; j < byteCount.length; j++) {
+                            byteCount[j] = byteCount[j] / max;
+                        }
+
+                        //Compounding the byte frequency if needed
+                        if (max > (0.7 * count)) {
+                            for (int j = 0; j < 256; j++) {
+                                byteCount[j] = Math.pow(byteCount[j], 0.5);
+                            }
+                        }
+
+                        //Updating the fingerprint file
                         for (int j = 0; j < 256; j++) {
-                            byteCount[j] = Math.pow(byteCount[j], 0.5);
+                            byteFreq[j] = ((byteFreq[j] * numFiles) + byteCount[j]) / (numFiles + 1);
                         }
+
+                        sc.close();
+                        FileWriter fw = new FileWriter(fingerprint);
+                        fw.write(Integer.toString(numFiles + 1));
+
+                        fw.write("\n");
+                        for (int j = 0; j < 256; j++) {
+                            String temp = byteFreq[j] + "," + byteCorrelation[j] + "\t";
+                            fw.write(temp);
+                        }
+
+                        fw.write("\n");
+                        fw.close();
                     }
-
-                    //Updating the fingerprint file
-                    for (int j = 0; j < 256; j++) {
-                        byteFreq[j] = ((byteFreq[j] * numFiles) + byteCount[j]) / (numFiles + 1);
-                    }
-
-                    sc.close();
-                    FileWriter fw = new FileWriter(fingerprint);
-                    fw.write(Integer.toString(numFiles + 1));
-
-                    fw.write("\n");
-                    for (int j = 0; j < 256; j++) {
-                        String temp = byteFreq[j] + "," + byteCorrelation[j] + "\t";
-                        fw.write(temp);
-                    }
-
-                    fw.write("\n");
-                    fw.close();
                 }
                 JSONObject json = new JSONObject();
                 for (int j = 0; j < 256; j++) {
